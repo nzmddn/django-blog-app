@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="jumbotron text-center">
+    <h3>NT Bloğuna Hoşgeldiniz</h3>
+    <p>Bu blogta şuanlık birşey bulunmamaktadır. O yüzden çok da bıdı bıdı yapmaya gerek yok. atıyorum ilerleyen zamanlarda bir makale falan koyarsam o zaman adam akıllı birşey okuyabilirsiniz. Şimdilik bununla yetinin.</p>
+    <p>------------işte bunlar hep deneme------------</p>
+</div>
+<p>
+
+    {% if request.user.is_authenticated %}
+        Giriş Yapılmış {{request.user.username}}
+    
+    {% else %}
+        Giriş Yapılmamış
+    {% endif %}
+
+</p>
+<p>
+
+    {{number2}}
+
+</p>
+{% endblock body %}
