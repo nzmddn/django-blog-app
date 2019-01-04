@@ -1,0 +1,5 @@
+Django==2.1.4
+Django-ckeditor==5.6.1
+Django-cleanup==0.4.2
+Django-crispy-forms==1.7.2
+Django-js-asset==1.1.0
